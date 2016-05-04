@@ -1,4 +1,4 @@
-var Node = require("./node");
+var Node = require("./mynode");
 
 function List() {
     this._length = 0;
@@ -41,6 +41,7 @@ function List() {
 	this.removeLast = function(){
 		var tmpNode = this.tail;
 		this.tail = this.tail.prev;
+		this.tail.next = null;
 		this._length -= 1;
 		return tmpNode;
 	};

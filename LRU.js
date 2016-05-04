@@ -1,5 +1,5 @@
-var Dict = require("./dict");
-var List = require("./list");
+var Dict = require('./dict.js');
+var List = require('./list.js');
 
 function LRU(){
 	this.lruLimit = 5;
